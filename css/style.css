@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   width: 480px;
-  padding: 25px;
+  padding: 5px;
 }
 .offer .top .logo {
   display: flex;
@@ -18,7 +18,7 @@
 }
 .offer .top .logo img {
   margin-right: 10px;
-  width: 57px;
+  width: 200px;
 }
 .offer .top .logo h2 {
   font-size: 21px;
@@ -558,7 +558,7 @@
   margin: 30px 0;
 }
 .s-sell_title span {
-  color: #ebd10c;
+  color: #c31fed;
 }
 .s-sell_list {
   display: flex;
@@ -687,3 +687,38 @@
 .s-quality_image {
   width: 100%;
 }
+
+.offer {
+  position: relative;
+}
+
+.offer-btn {
+  position: absolute;
+  top: 660px; /* подгони под свою картинку */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #6f1ca3, #c363ff);
+  color: white;
+  padding: 14px 80px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;  /* Одинаковый радиус как у .button */
+  cursor: pointer;
+  z-index: 1;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, box-shadow 0.2s ease;  /* Добавил плавный переход для box-shadow */
+}
+
+.offer-btn:hover {
+   box-shadow: 0 0 10px #0bacf6;
+}
+@media screen and (max-width: 768px) {
+  .offer-btn {
+    top: 480px;
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+}
+

@@ -9,7 +9,7 @@ body {
 
 .container {
   width: 480px;
-  background: white;
+  background: #001240;
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ section {
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  border-radius: 40px;
+  border-radius: 40px; /* Чтобы радиус был одинаковым */
   border: none;
   color: white;
   text-decoration: none;
@@ -38,9 +38,7 @@ section {
 }
 
 .button:hover  {
-  -moz-box-shadow:0 0 10px #0bacf6;
-  -webkit-box-shadow:0 0 10px #0bacf6;
-  box-shadow:0 0 10px #0bacf6;
+   box-shadow: 0 0 10px #0bacf6;
 }
 
 .video-container {
