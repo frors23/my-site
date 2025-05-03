@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дякуємо за заявку!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        .thank-you-message {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .thank-you-message h1 {
+            color: #7610b5;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-message p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .thank-you-message .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7610b5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .thank-you-message .btn:hover {
+            background-color: #7610b5;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="thank-you-message">
+            <h1>Дякуємо за вашу заявку!</h1>
+            <p>Ваша заявка успішно надіслана. Наш менеджер зв'яжеться з вами найближчим часом для підтвердження
+                замовлення та надання додаткової інформації.</p>
+            <a href="/" class="btn">Повернутися на головну</a>
+        </div>
+        <div class="footer">
+            <p>Всі права захищені &copy; <span id="year"></span> Ваш сайт.</p>
+        </div>
+    </div>
+
+    <script>
+        // Оновлення року в підвалі
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
