@@ -694,21 +694,27 @@
 
 .offer-btn {
   position: absolute;
-  top: 660px; /* подгони под свою картинку */
+  top: 660px;
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(to right, #6f1ca3, #c363ff);
   color: white;
-  padding: 14px 80px;
+  padding: 14px 0;
+  width: 90%;
+  max-width: 420px;
   font-size: 20px;
   font-weight: bold;
   border: none;
-  border-radius: 40px;  /* Одинаковый радиус как у .button */
+  border-radius: 40px;
   cursor: pointer;
   z-index: 1;
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: background 0.3s ease, box-shadow 0.2s ease;  /* Добавил плавный переход для box-shadow */
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+
+  /* добавь эти строки: */
+  text-align: center;
+  display: inline-block;
 }
 
 .offer-btn:hover {
